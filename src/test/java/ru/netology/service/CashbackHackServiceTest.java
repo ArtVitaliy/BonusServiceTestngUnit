@@ -7,7 +7,7 @@ import static org.testng.Assert.*;
 public class CashbackHackServiceTest {
 
     @Test
-    public void testRemain() {
+    public void shouldCalculateIfAmount100() {
         int amount = 100;
         int expected = 900;
 
@@ -18,7 +18,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void testRemain1() {
+    public void shouldCalculateIfAmount1() {
         int amount = 1;
         int expected = 999;
 
@@ -29,7 +29,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void testRemain2() {
+    public void shouldCalculateIfAmount1000() {
         int amount = 1000;
         int expected = 0;
 
@@ -40,7 +40,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void testRemain3() {
+    public void shouldCalculateIfAmount1500() {
         int amount = 1500;
         int expected = 0;
 
